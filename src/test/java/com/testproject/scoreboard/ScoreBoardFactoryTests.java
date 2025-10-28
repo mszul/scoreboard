@@ -8,7 +8,7 @@ class ScoreBoardFactoryTests {
 
     @Test
     public void create_shouldCreateScoreBoard() {
-        var scoreboard = ScoreBoardFactory.create(new MatchRepository());
+        var scoreboard = ScoreBoardFactory.create();
 
         assertThat(scoreboard).isInstanceOf(ScoreBoardImpl.class);
     }
